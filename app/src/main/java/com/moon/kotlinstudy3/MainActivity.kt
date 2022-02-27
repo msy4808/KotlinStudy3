@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val btn = findViewById<Button>(R.id.button)
-        val lambda = {x:Int, y:Int ->
+        val lambda = {x:Int, y:Int -> //람다식 기본문법
             Toast.makeText(this, "입력된 두 수는 ${x} 와 $y 입니다",Toast.LENGTH_SHORT).show()
         }
         btn.setOnClickListener {
